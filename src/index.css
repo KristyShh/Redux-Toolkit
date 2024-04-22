@@ -1,0 +1,117 @@
+:root {
+  --font-color: #c23091;
+  --body-bg-color: #fff;
+  --radius:8px;
+
+}
+:root[data-theme="dark"] {
+  --font-color: #fff;
+  --body-bg-color: #242424;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-weight: 400;
+  text-decoration: inherit;
+  color:rgb(245, 73, 168);
+  
+}
+a:hover {
+  color: #f10eb1;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  
+}
+ol li {
+  margin: 0 10px;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--body-bg-color);
+  color: var(--font-color);
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button {
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: 1px solid var(--font-color);
+  padding: 5px 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--body-bg-color);
+  color: var(--font-color);
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #f10eb1;
+  background-color: #ece7eb
+  
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+form {
+  margin-top: 50px;
+}
+input {
+  width: 20%;
+  height: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--font-color);
+  padding: 0,5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--body-bg-color);
+  color: var(--font-color);
+  transition: border-color 0.25s;
+  margin-bottom: 10px;
+}
+main {
+  padding: 20px 20px;
+}
+.active {
+  color: rgb(189, 189, 241);
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+input:focus,
+input:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  background-color: #ece7eb;
+  color: #f10eb1;
+  
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
