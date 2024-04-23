@@ -27,7 +27,7 @@ export const UserPage = () => {
             
         <div>
                 {loading && <div>Loading...</div> }
-                {error && <div>{error}</div>};
+                {error && <div>{error}</div>}
                 {users && (
                     <ul>
                     {users.map((user: IUser) => (

@@ -1,5 +1,3 @@
-
-import './App.css'
 import { Error } from './components/pages/error'
 import './components/header.css'
 import { Main } from './components/pages/main'
