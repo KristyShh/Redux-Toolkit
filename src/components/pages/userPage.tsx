@@ -22,9 +22,7 @@ export const UserPage = () => {
 
     return (
         <div>
-            
             <h2>Hello </h2>
-            
         <div>
                 {loading && <div>Loading...</div> }
                 {error && <div>{error}</div>}

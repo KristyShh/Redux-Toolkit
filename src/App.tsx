@@ -1,6 +1,6 @@
 import { Error } from './components/pages/error'
 import './components/header.css'
-import { Main } from './components/pages/main'
+import { PostsList } from './components/pages/postsList'
 import { Counter } from './components/pages/counter'
 import {Routes, Route} from 'react-router-dom'
 import { Layout } from './components/pages/layout'
@@ -11,13 +11,17 @@ import { PrivateRoute } from './components/pages/privateRoute'
 
 
 
+
 function App() {  
   return (
     <>
+   
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Main />} />
-        <Route path="/counter" element={<Counter />} />    
+      
+        <Route path="/" element={<PostsList />} />
+      
+        <Route path="/counter" element={<Counter />} />   
         <Route path="/UserPage" element={<UserPage/>} />
         <Route element={<PrivateRoute />}> 
           <Route path="/privatePage" element={<PrivatePage />} />
@@ -26,6 +30,7 @@ function App() {
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>
+    
     </>
   )
 }

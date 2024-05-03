@@ -3,13 +3,16 @@ import { countReducer } from "./count/index";
 import { configureStore } from "@reduxjs/toolkit";
 import { userReducer } from "./users";
 
+import { postsReducer } from "./posts";
+
 import { registrFormReducer } from "./registrationForm/index";
 
 export const store = configureStore({
     reducer : {
         count : countReducer,
         users : userReducer,
-        form: registrFormReducer 
+        form: registrFormReducer,
+        posts: postsReducer
     }    
 })
 

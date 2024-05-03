@@ -8,7 +8,7 @@ export const Header = () => {
             <h2>logo</h2>
             <ol>
                 <li>
-                    <NavLink to="/">Main</NavLink>
+                    <NavLink to="/">Posts</NavLink>
                 </li>
                 <li>
                     <NavLink to="/counter">Counter</NavLink>

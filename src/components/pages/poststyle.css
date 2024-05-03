@@ -1,0 +1,20 @@
+.postsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+.image {
+    width: 150px;
+    height: 150px;
+}
+p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+input {
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
